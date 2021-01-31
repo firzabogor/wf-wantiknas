@@ -1,6 +1,3 @@
-<?php
-  $role = "ASMIN";
-?>
 <!-- Sidenav -->
 <nav class="sidenav navbar navbar-vertical fixed-left navbar-expand-xs navbar-light bg-white" id="sidenav-main">
   <div class="scrollbar-inner">
@@ -33,113 +30,23 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#navbar-examples" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
-              <i class="ni ni-ungroup text-orange"></i>
-              <span class="nav-link-text">My Task</span>
+              <i class="ni ni-bullet-list-67 text-orange"></i>
+              <span class="nav-link-text">Pengajuan Meeting</span>
             </a>
             <div class="collapse" id="navbar-examples">
               <ul class="nav nav-sm flex-column">
-                <?php
-                if($role == 'ASMIN'){
-                  echo '
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <span style="width:165px;">Pembuatan Undangan</span>
-                      <span class="pull-right-container">
-                        <span class="badge-circle badge-primary pull-right">4</span>
-                      </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <span style="width:165px;">Booking Konsumsi</span>
-                      <span class="pull-right-container">
-                        <span class="badge-circle badge-primary pull-right">4</span>
-                      </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <span style="width:165px;">Pembuatan Form Absen Rapat</span>
-                      <span class="pull-right-container">
-                        <span class="badge-circle badge-primary pull-right">4</span>
-                      </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <span style="width:165px;">Booking Ruangan</span>
-                      <span class="pull-right-container">
-                        <span class="badge-circle badge-primary pull-right">4</span>
-                      </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <span style="width:165px;">Booking Link Meeting</span>
-                      <span class="pull-right-container">
-                        <span class="badge-circle badge-primary pull-right">4</span>
-                      </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <span style="width:165px;">Booking Narasumber/Moderator</span>
-                      <span class="pull-right-container">
-                        <span class="badge-circle badge-primary pull-right">4</span>
-                      </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <span style="width:165px;">Booking Transportasi</span>
-                      <span class="pull-right-container">
-                        <span class="badge-circle badge-primary pull-right">4</span>
-                      </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <span style="width:165px;">Booking Ruang Rapat Hotel</span>
-                      <span class="pull-right-container">
-                        <span class="badge-circle badge-primary pull-right">4</span>
-                      </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <span style="width:165px;">Booking Kamar Hotel</span>
-                      <span class="pull-right-container">
-                        <span class="badge-circle badge-primary pull-right">4</span>
-                      </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <span style="width:165px;">Pembuatan Itenary</span>
-                      <span class="pull-right-container">
-                        <span class="badge-circle badge-primary pull-right">4</span>
-                      </span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link">
-                      <span style="width:165px;">Pembuatan Norminatif SPPD</span>
-                      <span class="pull-right-container">
-                        <span class="badge-circle badge-primary pull-right">4</span>
-                      </span>
-                    </a>
-                  </li>
-                  ';
-                }
-                ?>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <span>Meeting Internal</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <span>Meeting Eksternal</span>
+                  </a>
+                </li>
               </ul>
             </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../pages/calendar.html">
-              <i class="ni ni-calendar-grid-58 text-red"></i>
-              <span class="nav-link-text">Calendar</span>
-            </a>
           </li>
         </ul>
         <!-- Divider -->
@@ -149,21 +56,51 @@
         <!-- Navigation -->
         <ul class="navbar-nav mb-md-3">
           <li class="nav-item">
-            <a class="nav-link" href="user">
-              <i class="ni ni-single-02 text-blue"></i>
-              <span class="nav-link-text">Users</span>
+            <a class="nav-link"href="<?php echo base_url("user");?>">
+              <i class="ni ni-single-02 text-orange"></i>
+              <span class="nav-link-text">User</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="narasumber">
-              <i class="ni ni-badge text-green"></i>
+            <a class="nav-link"href="<?php echo base_url("tag");?>">
+              <i class="ni ni-tag text-yellow"></i>
+              <span class="nav-link-text">Tag</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"href="<?php echo base_url("instansi");?>">
+              <i class="ni ni-building text-green"></i>
+              <span class="nav-link-text">Instansi</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"href="<?php echo base_url("narasumber");?>">
+              <i class="ni ni-paper-diploma text-red"></i>
               <span class="nav-link-text">Narasumber</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="ni ni-key-25"></i>
-              <span class="nav-link-text">Change Password</span>
+            <a class="nav-link"href="<?php echo base_url("tribe");?>">
+              <i class="ni ni-vector text-blue"></i>
+              <span class="nav-link-text">Tribe</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"href="<?php echo base_url("bank");?>">
+              <i class="ni ni-credit-card text-orange"></i>
+              <span class="nav-link-text">Bank</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"href="<?php echo base_url("role");?>">
+              <i class="ni ni-bulb-61 text-yellow"></i>
+              <span class="nav-link-text">Role</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"href="<?php echo base_url("jabatan");?>">
+              <i class="ni ni-tie-bow text-red"></i>
+              <span class="nav-link-text">Jabatan</span>
             </a>
           </li>
         </ul>

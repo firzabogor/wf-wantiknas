@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
         <meta name="author" content="Creative Tim">
-        <title>Argon Dashboard PRO - Premium Bootstrap 4 Admin Template</title>
+        <title>Workflow System | Dewan Teknologi Informasi dan Komunikasi</title>
         <!-- Favicon -->
         <link rel="icon" href="<?php echo asset_url();?>img/brand/favicon.png" type="image/png">
         <!-- Fonts -->
@@ -22,43 +22,7 @@
         <link rel="stylesheet" href="<?php echo asset_url();?>vendor/clockpicker/dist/bootstrap-clockpicker.min.css">
         <!-- Argon CSS -->
         <link rel="stylesheet" href="<?php echo asset_url();?>css/argon.css?v=1.1.0" type="text/css">
-        <style>
-            td.details-control::before {
-                font-family: NucleoIcons;
-                content: '\ea11';
-                color: #ced4da;
-                cursor:pointer;
-                position: absolute;
-                margin-left:15px;
-                font-weight: 350;
-                font-style: normal;
-                font-variant: normal;
-                font-size: .750rem;
-            }
-            tr.shown td.details-control::before {
-                font-family: NucleoIcons;
-                content: '\ea0f';
-                color: #5e72e4;
-                cursor:pointer;
-                position: absolute;
-                margin-left:15px;
-            }
-            .pull-right {
-                float: right!important;
-            }
-
-            .pull-right-container {
-                position: absolute;
-                right: 10px;
-            }
-
-            #deskripsi_narasumber p{
-                line-height: 0.6;
-                font-size: .8125rem;
-                color: #525f7f;
-                font-weight: 400;
-            }
-        </style>
+        <link rel="stylesheet" href="<?php echo asset_url();?>css/custom.css" type="text/css">
     </head>
     <body>
         <script src="<?php echo asset_url();?>vendor/jquery/dist/jquery.min.js"></script>

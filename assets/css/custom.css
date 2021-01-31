@@ -1,0 +1,21 @@
+td.details-control::before {
+    font-family: NucleoIcons;
+    content: '\ea11';
+    color: #ced4da;
+    cursor:pointer;
+    position: absolute;
+    margin-left:15px;
+    font-weight: 350;
+    font-style: normal;
+    font-variant: normal;
+    font-size: .750rem;
+}
+
+tr.shown td.details-control::before {
+    font-family: NucleoIcons;
+    content: '\ea0f';
+    color: #5e72e4;
+    cursor:pointer;
+    position: absolute;
+    margin-left:15px;
+}
